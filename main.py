@@ -1,4 +1,9 @@
-print("hello world")
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+import time
 
-Str = "hello world"
-print(Str) # hello world
+s = Service('usr/local/bin/chromedriver')
+driver = webdriver.Chrome(service=s)
